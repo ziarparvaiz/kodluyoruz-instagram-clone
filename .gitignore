@@ -1,0 +1,12 @@
+.DS_Store
+
+node_modules/
+package-lock.json
+design/
+.idea
+resource
+TODO.md
+
+*.xd
+*.fig
+*.sketch

@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/js/script.js"],"names":["factory","define","amd","console","log"],"mappings":"CAAA,SAAWA,GACQ,mBAAXC,QAAyBA,OAAOC,IAAMD,OAAO,SAAUD,GAC9DA,IAFD,EAGG,WAAe,aAHlBG,QAAQC,IAAI","file":"app/js/script.js","sourcesContent":["console.log(\"Hello World!\")"]}

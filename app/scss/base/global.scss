@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+
+body {
+    background-color: var(--background-color);
+    color: var(--white);
+    height: 100vh;
+    
+}
+
+
+.container {
+    max-width: rem($container-size);
+    margin: 0 auto;
+    padding: 0 rem(18);
+}
+
+
+.h-icon {
+    width: rem(24);
+    height: rem(24);
+    color: var(--white);
+    fill: var(--white);
+    cursor: pointer;
+}
