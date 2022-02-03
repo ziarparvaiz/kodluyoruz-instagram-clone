@@ -64,3 +64,27 @@ textarea {
 :where([draggable="true"]) {
     -webkit-user-drag: element;
 }
+
+
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    // scrollbar-color: #4B3DDA #262837;
+    scrollbar-color: #4B3DDA #262837;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: rem(12);
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #262837;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #4B3DDA;
+    border-radius: rem(20);
+    border: rem(3) solid #262837;
+  }
