@@ -1,0 +1,120 @@
+@use '../abstracts/' as *;
+
+.follower-action {
+
+    width: rem(293);
+
+    .follower-action-profile {
+        display: flex;
+        height: rem(56);
+        font-size: rem(14);
+    
+        div > img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    
+        .follower-action-profile-user{
+            display: flex;
+            flex-direction: column;
+            margin: auto rem(20);
+    
+            .user-name {
+                font-weight: bold;
+                margin-bottom: rem(5);
+            }
+    
+            .user-full-name {
+                color: gray
+            }
+        }
+    
+        .follower-action-link {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+    
+            a {
+                color: #0095F6;
+                font-size: rem(12);
+            }
+        }
+    
+    }
+    
+    .suggestions {
+        display: flex;
+        justify-content: space-between;
+        margin: rem(20) 0;
+    
+        .suggestions-for-you {
+            color: gray;
+            font-weight: bold;
+        }
+    }
+    
+    .follower-action-users{
+    
+        display: flex;
+        height: rem(48);
+        font-size: rem(14);
+        margin: rem(7) 0;
+    
+        .user-img {
+    
+            padding: rem(5);
+            margin-right: rem(5);
+    
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+    
+        }
+    
+        .user-information{
+    
+            display: flex;
+            flex-direction: column;
+    
+            .user-name {
+                margin-bottom: rem(5);
+            }
+    
+            .user-followed {
+                color: gray;
+                font-size: rem(12);
+            }
+    
+        }
+    
+        .user-follow {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+    
+            a {
+                color: #0095F6;
+                font-size: rem(12);
+            }
+        }
+                        
+    }
+    
+    .follower-action-footer-tabs {
+        margin: rem(30) 0;
+        color: rgb(66, 66, 66);
+        font-size: rem(11);
+    
+        li {
+            margin-left: rem(4);
+            display: inline-block;
+        }
+    }
+
+}
+                    
