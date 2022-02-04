@@ -33,8 +33,7 @@
             }
     
             .user-full-name {
-                color: gray
-            }
+                color: var(--grey);            }
         }
     
         .follower-action-link {
@@ -56,8 +55,7 @@
         margin: rem(20) 0;
     
         .suggestions-for-you {
-            color: gray;
-            font-weight: bold;
+            color: var(--grey);            font-weight: bold;
         }
     }
     
@@ -95,8 +93,7 @@
             }
     
             .user-followed {
-                color: gray;
-                font-size: rem(12);
+                color: var(--grey);                font-size: rem(12);
             }
     
         }
@@ -116,7 +113,7 @@
     
     .follower-action-footer-tabs {
         margin: rem(30) 0;
-        color: rgb(66, 66, 66);
+        color: var(--dark);
         font-size: rem(11);
     
         li {
