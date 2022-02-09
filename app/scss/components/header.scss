@@ -26,6 +26,7 @@
         border-radius: rem(8);
         @include flexcenter;
         background-color: var(--background-color);
+        color: var(--white);
         position: relative;
 
         @media(max-width: 640px) {
@@ -55,24 +56,85 @@
 
     }
 
-    .action {
+    .actions {
         display: flex;
         gap: rem(20);
 
-
         .user-action {
-            width: rem(24);
-            height: rem(24);
-            cursor: pointer;
+            position: relative;
 
-            img {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
+            .user-image {
+                width: rem(24);
+                height: rem(24);
+                cursor: pointer;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
             }
-        }
 
+            .user-dropdown-menu {
+                position: absolute;
+                top: rem(40);
+                right: 0;
+                background-color: var(--dark);
+                width: rem(230);
+                border-radius: rem(4);
+                transition: 0.5s;
+                visibility: hidden;
+                opacity: 0;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: rem(-5);
+                    right: rem(7);
+                    width: rem(12);
+                    height: rem(12);
+                    background-color: var(--background-color);
+                    transform: rotate(45deg);
+                    z-index: -1;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+
+                    li {
+                        a {
+                            display: flex;
+                            padding: rem(8) rem(16);
+                            gap: rem(12);
+                            color: var(--var);
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #1d1d2971;
+                                z-index: -1;
+                            }
+                        }
+                    }
+                    .logout {
+                        border-top: rem(1) solid var(--background-color);
+                        padding: rem(8) rem(16);
+                        color: rgb(255, 255, 255);
+                        &:hover {
+                            background-color: #1d1d2971;
+                        }
+                    }
+                }
+
+            }
+            .active {
+                top: rem(40);
+                visibility: visible;
+                opacity: 1;
+            }
+
+        }
     }
 
 }
