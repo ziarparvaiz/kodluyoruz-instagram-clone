@@ -1,2 +1,2 @@
-!function(e){"function"==typeof define&&define.amd?define("script",e):e()}((function(){"use strict";console.log("Hello World!")}));
+!function(e){"function"==typeof define&&define.amd?define("script",e):e()}((function(){"use strict";!function(){const e=document.getElementById("Open_Post_Upload_Popup"),t=document.getElementById("Close-Post-Upload-Popup"),i=document.querySelector(".post-upload-popup");e.addEventListener("click",(()=>{i.style.visibility="visible"})),t.addEventListener("click",(()=>{i.style.visibility="hidden"}))}()}));
 //# sourceMappingURL=script.js.map

@@ -1,0 +1,110 @@
+@use '../abstracts/' as *;
+
+.post-upload-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include flexcenter;
+  z-index: 1;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.562);
+  visibility: hidden;
+  transition: 200ms all;
+  padding: 0 rem(20);
+
+
+  #Close-Post-Upload-Popup {
+    width: rem(24);
+    height: rem(24);
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    margin: rem(20);
+  }
+
+  .popup-inner {
+    position: relative;
+    width: 100%;
+  }
+
+  .post-upload {
+    width: rem(484);
+    border-radius: rem(12);
+    background-color: var(--background-color);
+
+    &--header {
+      padding: rem(10);
+      @include flexcenter;
+      border-bottom: rem(1) solid var(--dark);
+
+      h5 {
+        font-size: rem(16);
+        font-weight: 600;
+        line-height: rem(24);
+        text-align: center;
+      }
+    }
+
+    &--content {
+      padding: rem(24);
+      @include flexcenter;
+      flex-direction: column;
+      min-height: rem(480);
+
+      h1 {
+        font-size: rem(22);
+        line-height: rem(26);
+        font-weight: 300;
+        margin-bottom: rem(14);
+        margin-top: rem(16);
+      }
+
+      .upload-file {
+        .text {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          font-size: rem(14);
+          font-weight: 600;
+          padding: rem(5) rem(9);
+          text-align: center;
+          background-color: var(--primary);
+          border: rem(1) solid var(--primary);
+          border-radius: rem(4);
+          transition: 200ms background-color;
+
+          &:hover {
+            background-color: rgba(74, 61, 218, 0.315);
+          }
+
+          &::before {
+            content: attr(data-invalid);
+          }
+        }
+
+        input {
+          display: none;
+
+          &:valid+.text {
+            border-color: var(--success);
+            background-color: #4eeb3234;
+
+            // ? WARNING:- success color is update to => 4DEB32
+            border: rem(1) solid var(--success);
+
+            &::before {
+              content: attr(data-valid);
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
