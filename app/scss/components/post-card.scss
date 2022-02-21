@@ -1,0 +1,105 @@
+@use '../abstracts/' as *;
+
+.posts-content {
+    display: flex;
+    flex-direction: column;
+    gap: rem(15);
+
+    .post-card {
+        width: 100%;
+        background-color: var(--dark);
+        border-radius: rem(15);
+        padding: rem(15);
+
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: rem(60);
+            margin-bottom: rem(10);
+
+            .post-info {
+                display: flex;
+                align-items: center;
+                gap: rem(15);
+
+                .profile-name {
+                    display: flex;
+                    flex-direction: column;
+
+                    .name {
+                        font-weight: 700;
+                    }
+
+                    .username {
+                        font-size: rem(14);
+                        color: var(--grey);
+                    }
+                }
+
+                .profile-img {
+                    @include flexcenter;
+                    border-radius: 50%;
+                    border: 2px solid var(--primary);
+                    padding: rem(2);
+                    width: rem(42);
+                    height: rem(42);
+
+                    img {
+                        @include imageFit;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        .post-content {
+            margin-bottom: rem(17);
+            
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: rem(15);
+            }
+        }
+
+        .post-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .post-action {
+                @include flexcenter;
+                gap: rem(11);
+
+                .like, .comment {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 10px;
+                    border-radius: rem(20);
+                    cursor: pointer;
+                    transition: 200ms all;
+
+                    span {
+                        color: var(--grey);
+                        font-size: rem(15);
+                        font-weight: 600;
+                        
+                    }
+
+                    &:hover {
+                        background-color: var(--background-color);
+                    }
+                }
+
+            }
+        }
+
+        .h-icon {
+            color: var(--grey);
+            fill: var(--grey);
+        }
+
+    }
+}
