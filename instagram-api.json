@@ -1,0 +1,82 @@
+[
+    {
+        "id": 0,
+        "name": "kodluyouruz",
+        "username": "Kodluyoruz",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nisi, deleniti explicabo eaque cupiditate recusandae error. Enim porro animi, voluptates molestias quos, a minima amet omnis nihil nisi minus placeat.",
+        "profilephoto": "./app/images/users/kodluyouruz.png",
+        "postphoto": "./app/images/posts/01.png",
+        "likes": 220,
+        "comments": 43
+    },
+    {
+        "id": 1,
+        "name": "Cardi_B",
+        "username": "cardi_b",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nisi, deleniti explicabo eaque cupiditate recusandae error. Enim porro animi, voluptates molestias quos, a minima amet omnis nihil nisi minus placeat.",
+        "profilephoto": "./app/images/users/cardib.jpg",
+        "postphoto": "./app/images/posts/02.jpg",
+        "likes": 222220,
+        "comments": 412123
+    },
+    {
+        "id": 2,
+        "name": "Drake",
+        "username": "drake",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nisi, deleniti explicabo eaque cupiditate recusandae error. Enim porro animi, voluptates molestias quos, a minima amet omnis nihil nisi minus placeat.",
+        "profilephoto": "./app/images/users/drake.jpg",
+        "postphoto": "./app/images/posts/08.jpg",
+        "likes": 422220,
+        "comments": 2213
+    },
+    {
+        "id": 3,
+        "name": "Dualipa",
+        "username": "dualipa",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nisi, deleniti explicabo eaque cupiditate recusandae error. Enim porro animi, voluptates molestias quos, a minima amet omnis nihil nisi minus placeat.",
+        "profilephoto": "./app/images/users/dualipa.jpg",
+        "postphoto": "./app/images/posts/04.jpg",
+        "likes": 554545,
+        "comments": 3443
+    },
+    {
+        "id": 4,
+        "name": "Emma - Watson",
+        "username": "emma_watson",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nisi, deleniti explicabo eaque cupiditate recusandae error. Enim porro animi, voluptates molestias quos, a minima amet omnis nihil nisi minus placeat.",
+        "profilephoto": "./app/images/users/emma-watson.jpg",
+        "postphoto": "./app/images/posts/05.jpg",
+        "likes": 87867,
+        "comments": 5564
+    },
+    {
+        "id": 5,
+        "name": "Jennifer Lopez",
+        "username": "jennifer_lopez",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nisi, deleniti explicabo eaque cupiditate recusandae error. Enim porro animi, voluptates molestias quos, a minima amet omnis nihil nisi minus placeat.",
+        "profilephoto": "./app/images/users/jennifer-lopez.jpg",
+        "postphoto": "./app/images/posts/06.jpg",
+        "likes": 3423,
+        "comments": 2433
+    },
+    {
+        "id": 6,
+        "name": "Kendal Jenner",
+        "username": "kendal_jenner",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nisi, deleniti explicabo eaque cupiditate recusandae error. Enim porro animi, voluptates molestias quos, a minima amet omnis nihil nisi minus placeat.",
+        "profilephoto": "./app/images/users/kendaljenner.png",
+        "postphoto": "./app/images/posts/07.jpg",
+        "likes": 435,
+        "comments": 2423
+    },
+    {
+        "id": 7,
+        "name": "Tyga",
+        "username": "tyga",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo nisi, deleniti explicabo eaque cupiditate recusandae error. Enim porro animi, voluptates molestias quos, a minima amet omnis nihil nisi minus placeat.",
+        "profilephoto": "./app/images/users/tyga.jpg",
+        "postphoto": "./app/images/posts/09.jpg",
+        "likes": 2423334,
+        "comments": 2342
+    }
+]
