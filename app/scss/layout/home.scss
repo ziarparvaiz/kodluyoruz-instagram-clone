@@ -1,11 +1,18 @@
 @use '../abstracts/' as *;
 
 main {
+    margin-top: rem(90);
 
     .container {
         display: flex;
-        padding-top: rem(30);
-        gap: rem(30);
+        justify-content: left;
+        margin: 0 auto;
+        max-width: 1000px;
+        gap: 0 rem(30);
+        
+        @media (max-width: 1024px) {
+            justify-content: center;
+        }
 
         .content-main {
             flex: 1;
