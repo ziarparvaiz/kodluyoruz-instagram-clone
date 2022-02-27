@@ -1,0 +1,164 @@
+@use '../abstracts/'as *;
+
+.follower-action {
+    display: flex;
+    flex-direction: column;
+
+    .user-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: rem(18) 0 rem(10) 0;
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: rem(14);
+
+            .profile-img {
+                width: rem(56);
+                height: rem(56);
+                cursor: pointer;
+
+                img {
+                    @include imageFit;
+                    border-radius: 50%;
+                }
+            }
+
+            .profile-name {
+                display: flex;
+                flex-direction: column;
+
+                .name {
+                    font-size: rem(14);
+                    font-weight: 600;
+                    line-height: rem(18);
+                    margin-bottom: rem(8);
+                }
+
+                .username {
+                    font-size: rem(12);
+                    font-weight: 400;
+                    line-height: rem(18);
+                    color: var(--grey);
+                }
+            }
+
+        }
+
+        .switch {
+            color: var(--primary);
+            font-size: rem(14);
+            font-weight: 600;
+            line-height: rem(16);
+            cursor: pointer;
+        }
+    }
+
+    .suggestions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: rem(12);
+
+        &-title {
+            font-size: rem(14);
+            line-height: rem(18);
+            font-weight: 600;
+            color: var(--grey);
+        }
+
+        .see-all {
+            font-size: rem(12);
+            line-height: rem(16);
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    .users {
+        display: flex;
+        flex-direction: column;
+        padding: rem(12) 0;
+        gap: rem(8);
+
+        .user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .user-infos {
+                display: flex;
+                align-items: center;
+                gap: rem(14);
+
+                .user-img {
+                    width: rem(32);
+                    height: rem(32);
+                    cursor: pointer;
+
+                    img {
+                        @include imageFit;
+                        border-radius: 50%;
+                    }
+                }
+
+                .account-info {
+                    display: flex;
+                    flex-direction: column;
+
+                    .username {
+                        font-size: rem(14);
+                        font-weight: 600;
+                        line-height: rem(11);
+                        color: var(--white);
+                        margin-bottom: rem(8);
+                        cursor: pointer;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .user-action {
+                        font-size: rem(12);
+                        font-weight: 400;
+                        line-height: rem(11);
+                        color: var(--grey);
+                    }
+                }
+
+            }
+
+            .follow {
+                font-size: rem(12);
+                font-weight: 600;
+                line-height: rem(11);
+                color: var(--primary);
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    .follower-action-footer {
+        margin-top: rem(16);
+        font-size: rem(11);
+        font-weight: 400;
+        line-height: rem(13);
+        color: var(--grey);
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: rem(9);
+            margin-bottom: rem(16);
+
+            .link {
+                cursor: pointer;
+            }
+        }
+
+    }
+}

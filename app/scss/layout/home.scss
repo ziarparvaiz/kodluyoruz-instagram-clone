@@ -15,11 +15,19 @@ main {
         }
 
         .content-main {
-            flex: 1;
+            // flex: 1;
+            width: rem(600);
+            @media (max-width: rem(600)) {
+                width: 100%;
+            }
         }
 
         .follower-action {
-            min-width: rem(293);
+            width: rem(293);
+
+            @media (max-width: rem(1024)) {
+                display: none;
+            }
         }
     }
 }
