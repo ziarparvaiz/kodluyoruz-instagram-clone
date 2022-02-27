@@ -1,18 +1,22 @@
 @use '../abstracts/' as *;
 
 main {
-
+    
     .container {
         display: flex;
-        padding-top: rem(30);
+        margin-top: rem(30);
         gap: rem(30);
-
+    
         .content-main {
             flex: 1;
         }
 
         .follower-action {
-            min-width: rem(293);
+            width: rem(293);
+
+            @media (max-width: rem(993)) {
+                display: none;
+            }
         }
     }
 }

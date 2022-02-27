@@ -4,7 +4,6 @@ body {
     background-color: var(--background-color);
     color: var(--white);
     height: 100vh;
-    
 }
 
 
@@ -21,4 +20,18 @@ body {
     color: var(--white);
     fill: var(--white);
     cursor: pointer;
+}
+
+.upload-icon {
+    width: rem(96);
+    height: rem(77);
+    color: var(--white);
+    fill: var(--white);
+}
+
+.U-Icon {
+    width: rem(16);
+    height: rem(16);
+    color: white;
+    fill: white;
 }
