@@ -13,6 +13,7 @@ npm install
 gulp
 ```
 
+## Contributors
 <div style ="margin-top:2rem; margin-bottom:2rem;"> 
 <a href="https://github.com/ziarparvaiz/kodluyoruz-instagram-clone/graphs/contributors">
   <img width="200" heigth="200" src="https://contrib.rocks/image?repo=ziarparvaiz/kodluyoruz-instagram-clone" />
